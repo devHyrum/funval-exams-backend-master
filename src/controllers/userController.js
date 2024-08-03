@@ -37,3 +37,11 @@ export const getStudents = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+export const getCurrentUser = async (req, res) => {
+  try {
+    res.json(req.user);
+  } catch (error) {
+    res.status(500).send({ error: 'Error al obtener el usuario actual' });
+  }
+};

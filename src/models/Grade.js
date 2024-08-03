@@ -1,4 +1,3 @@
-// src/models/Grade.js
 import mongoose from 'mongoose';
 
 const gradeSchema = new mongoose.Schema({

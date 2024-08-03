@@ -1,4 +1,3 @@
-// src/controllers/teacherController.js
 import User from '../models/User.js';
 
 export const assignStudentsToLevel = async (req, res) => {
